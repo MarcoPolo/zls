@@ -61,7 +61,7 @@
             mkdir -p $out
             mkdir -p .cache/{p,z,tmp}
             ${cp-phase}
-            zig build install --cache-dir $(pwd)/zig-cache --global-cache-dir $(pwd)/.cache -Dcpu=baseline -Doptimize=ReleaseSafe -Ddata_version=master --prefix $out
+            zig build install --cache-dir $(pwd)/zig-cache --global-cache-dir $(pwd)/.cache -Dcpu=baseline -Doptimize=ReleaseSafe -Ddata_version=0.10.1 --prefix $out
           '';
         };
       }
